@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$font-main: "Roboto", sans-serif;
+
+//colors
+$cta-action: linear-gradient(
+    88.51deg,
+    #dc4946 0.29%,
+    #f2726f 49.91%,
+    #ffc533 100%
+);
+$primary: #5d62b5;
+$secondary1: #29c3be;
+$secondary2: #f2726f;
+$secondary3: #ffc533;
+$secondary4: #62b58f;
+$btn-white: #fff;
+$neu-black: #000;
+
+body {
+    font-family: $font-main;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+}
+
+h2 {
+    font-size: 2.625rem;
+    line-height: 3rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+    line-height: 2.25rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+}
+
+h6 {
+    font-size: 1.18rem;
+    line-height: 1.625rem;
+}
+
+button {
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    padding: 0.8em 3em;
+    background-color: $secondary2;
+    border: none;
+    border-radius: 0.5rem;
+    color: $btn-white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+}
+
+.minicaps {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.125rem;
+    color: $btn-white;
+}
+
+.container {
+    max-width: 1020px;
+    width: 100%;
+    margin: 0 auto;
+}

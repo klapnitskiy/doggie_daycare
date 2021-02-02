@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+}
+
+h2 {
+  font-size: 2.625rem;
+  line-height: 3rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+  line-height: 2.25rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+
+h6 {
+  font-size: 1.18rem;
+  line-height: 1.625rem;
+}
+
+button {
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  padding: 0.8em 3em;
+  background-color: #f2726f;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+}
+
+.minicaps {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.125rem;
+  color: #fff;
+}
+
+.container {
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+}
+
+.header-top {
+  padding: 1.5625em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-info > * + * {
+  margin-left: 2rem;
+}
+
+.header-info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.header-info__caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 0.625em;
+}
+
+.header-nav {
+  background-color: #fff;
+  border-radius: 0.625rem;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0 2.5em;
+}
+
+.nav-links__item {
+  padding: 1.2em 0;
+}
+
+.nav-links__item a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.125rem;
+}
+
+.nav-links > * + * {
+  margin-left: 2.5em;
+}
+
+.hero {
+  background: url(../img/hero-bg-blue.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+/*# sourceMappingURL=style.css.map */

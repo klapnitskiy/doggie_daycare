@@ -1,0 +1,57 @@
+.header {
+    position: absolute;
+    width: 100%;
+}
+
+.header-top {
+    padding: 1.5625em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-info {
+    display: flex;
+
+    > * + * {
+        margin-left: 2rem;
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__caption {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.625em;
+    }
+}
+
+.header-nav {
+    background-color: $btn-white;
+    border-radius: 0.625rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0 2.5em;
+
+    &__item {
+        padding: 1.2em 0;
+
+        a {
+            text-decoration: none;
+            color: $neu-black;
+            font-size: 0.75rem;
+            font-weight: 700;
+            line-height: 1.125rem;
+        }
+    }
+
+    > * + * {
+        margin-left: 2.5em;
+    }
+}

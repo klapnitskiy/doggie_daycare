@@ -23,52 +23,68 @@ $secondary4: #62b58f;
 $btn-white: #fff;
 $neu-black: #000;
 $neu-grey-14: #f5f5f5;
+$neu-white: #fff;
 
 body {
     font-family: $font-main;
 }
 
-h1 {
-    font-size: 3.5rem;
-    line-height: 3.5rem;
-}
+.title {
+    font-weight: 900;
 
-h2 {
-    font-size: 2.625rem;
-    line-height: 3rem;
-}
+    &--biggest {
+        font-size: 56px;
+        line-height: 56px;
+    }
 
-h3 {
-    font-size: 2.25rem;
-    line-height: 2.625rem;
-}
+    &--bigger {
+        font-size: 42px;
+        line-height: 48px;
+    }
 
-h4 {
-    font-size: 1.8rem;
-    line-height: 2.25rem;
-}
+    &--big {
+        font-size: 36px;
+        line-height: 42px;
+    }
 
-h5 {
-    font-size: 1.5rem;
-    line-height: 1.875rem;
-}
+    &--medium {
+        font-size: 30px;
+        line-height: 36px;
+    }
 
-h6 {
-    font-size: 1.18rem;
-    line-height: 1.625rem;
-}
+    &--small {
+        font-size: 24px;
+        line-height: 30px;
+    }
 
-button {
-    font-size: 0.75rem;
-    line-height: 1.5rem;
-    font-weight: 700;
-    padding: 0.8em 3em;
-    background-color: $secondary2;
-    border: none;
-    border-radius: 0.5rem;
-    color: $btn-white;
-    text-transform: uppercase;
-    cursor: pointer;
+    &--smallest {
+        font-size: 19px;
+        line-height: 26px;
+    }
+
+    &--white {
+        color: $neu-white;
+    }
+
+    &--black {
+        color: $neu-black;
+    }
+
+    &--secondary {
+        color: $secondary2;
+    }
+
+    &--text-cap {
+        text-transform: capitalize;
+    }
+
+    &--text-upper {
+        text-transform: uppercase;
+    }
+
+    &-center {
+        text-align: center;
+    }
 }
 
 img {
@@ -76,30 +92,41 @@ img {
     height: auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 900;
-}
-
-.minicaps {
-    font-size: 0.75rem;
-    font-weight: 700;
-    line-height: 1.125rem;
-    letter-spacing: 0.09375em;
-    color: $btn-white;
-}
-
-.container {
-    max-width: 1020px;
-    width: 100%;
-    margin: 0 auto;
-}
-
 .align-center {
     display: flex;
     align-items: center;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.bold-overline {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    color: $btn-white;
+
+    &--bigger-spacing {
+        letter-spacing: 2.5px;
+    }
+}
+
+.feature-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__img {
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &_wrap {
+        margin-left: 23px;
+    }
 }

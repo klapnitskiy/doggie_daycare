@@ -5,35 +5,57 @@
 
 .about {
     background-color: #fff;
-    padding: 4.6875em 0 7.5em;
+    padding: 75px 0 120px;
 }
 
 .about-content {
     background-color: $primary;
     color: #fff;
-    padding: 2.8125em 5.3125em;
-    border-radius: 2.5em;
+    padding: 45px 85px;
+    border-radius: 40px;
 
     &__overline {
-        margin-bottom: 2em;
-
-        .minicaps {
-            text-transform: uppercase;
-        }
+        margin-bottom: 32px;
     }
 
     &__title {
         max-width: 583px;
-        margin-bottom: 1.3em;
+        margin-bottom: 36px;
     }
 
     &__text {
-        margin-bottom: 1.3em;
+        margin-bottom: 36px;
         color: $neu-grey-14;
     }
 
     &__img {
-        border-radius: 3em;
+        border-radius: 40px;
         overflow: hidden;
+    }
+}
+
+.about-promises {
+    margin-top: 110px;
+
+    &-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    &-item {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: unset;
+        flex-basis: calc(calc(830px - 100%) * 999);
+        flex-grow: 1;
+    }
+
+    &__title {
+        margin-bottom: 68px;
+    }
+
+    .bold-overline {
+        color: $primary;
     }
 }

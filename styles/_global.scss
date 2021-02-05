@@ -24,6 +24,7 @@ $btn-white: #fff;
 $neu-black: #000;
 $neu-grey-14: #f5f5f5;
 $neu-white: #fff;
+$neu-grey-2: #4b4b4b;
 
 body {
     font-family: $font-main;
@@ -81,15 +82,31 @@ body {
     &--text-upper {
         text-transform: uppercase;
     }
+}
 
-    &-center {
-        text-align: center;
+.text-body {
+    font-weight: normal;
+    letter-spacing: 0.15px;
+
+    &--normal {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &--smaller {
+        font-size: 14px;
+        line-height: 22px;
     }
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+.shadow {
+    box-shadow: (0px 8px 16px rgba(38, 38, 38, 0.24)),
+        (0px 16px 24px rgba(38, 38, 38, 0.2));
 }
 
 .align-center {
@@ -101,14 +118,20 @@ img {
     text-transform: uppercase;
 }
 
-.bold-overline {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 24px;
-    color: $btn-white;
+.overline {
+    &__title {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 24px;
+        color: $btn-white;
 
-    &--bigger-spacing {
-        letter-spacing: 2.5px;
+        &--bigger-spacing {
+            letter-spacing: 2.5px;
+        }
+
+        &--primary-clr {
+            color: $primary;
+        }
     }
 }
 
@@ -126,7 +149,11 @@ img {
         margin-bottom: 20px;
     }
 
-    &_wrap {
+    &__text {
+        color: $neu-grey-2;
+    }
+
+    &__wrap {
         margin-left: 23px;
     }
 }

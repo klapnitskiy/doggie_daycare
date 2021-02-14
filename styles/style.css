@@ -333,7 +333,7 @@ img {
   margin-top: 110px;
 }
 
-.about-promises__items {
+.about-promises__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

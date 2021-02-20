@@ -47,6 +47,10 @@
         &--text-cap {
             text-transform: capitalize;
         }
+
+        &--text-center {
+            text-align: center;
+        }
     }
 
     &--text-upper {
@@ -166,6 +170,15 @@
             font-size: 14px;
             line-height: 22px;
         }
+    }
+
+    &__input {
+        border: 2px solid $neu-white;
+        border-radius: 10px;
+        background-color: transparent;
+        color: $neu-white;
+        padding: 14px 24px;
+        width: 100%;
     }
 }
 

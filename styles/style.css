@@ -16,6 +16,12 @@ img {
   height: auto;
 }
 
+textarea {
+  resize: none;
+  width: 100%;
+  max-height: 180px;
+}
+
 .page__title {
   font-weight: 900;
 }
@@ -64,6 +70,10 @@ img {
 
 .page__title--text-cap {
   text-transform: capitalize;
+}
+
+.page__title--text-center {
+  text-align: center;
 }
 
 .page--text-upper {
@@ -197,6 +207,15 @@ img {
   line-height: 22px;
 }
 
+.page__input {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  padding: 14px 24px;
+  width: 100%;
+}
+
 .page-feature {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -300,6 +319,10 @@ img {
   font-size: 12px;
   font-weight: 700;
   line-height: 18px;
+}
+
+.hero {
+  width: 100%;
 }
 
 .about {
@@ -423,5 +446,76 @@ img {
 
 .services__button {
   margin: 0 auto;
+}
+
+.appointment {
+  background: url(../img/appointment-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.appointment__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 130px 0 210px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.appointment__title {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.appointment__title-digits {
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 56px;
+}
+
+.appointment--margin-b {
+  margin-bottom: 46px;
+}
+
+.appointment__form {
+  max-width: 585px;
+  width: 100%;
+  padding: 76px 57px;
+  -webkit-box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24), 0px 16px 24px rgba(38, 38, 38, 0.2);
+          box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24), 0px 16px 24px rgba(38, 38, 38, 0.2);
+  background-color: #5d62b5;
+  border-radius: 40px;
+}
+
+.appointment__form-title {
+  margin-bottom: 43px;
+}
+
+.appointment__form-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.appointment__form-input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 220px;
+          flex: 1 1 220px;
+  color: #fff;
+}
+
+.appointment__button {
+  margin-top: 30px;
+  margin-left: auto;
 }
 /*# sourceMappingURL=style.css.map */
